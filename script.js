@@ -1,14 +1,14 @@
 window.onload = function() {
-	let btn = document.querySelector("#button");
-
-	btn.addEventListener("click", function(event) {
-		event.preventDefault();
-		getFormvalue();
-	});
-
-	function getFormvalue() {
-		let a = document.querySelector("#first_name"); 
-		let b = document.querySelector("#last_name"); 
-		alert(a.value + " " + b.value);
-	}
+    let btn = document.querySelector("input[type='submit']");
+    
+    btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        getFormvalue();
+    });
+    
+    function getFormvalue() {
+        let a = document.querySelector("input[name='fname']"); 
+        let b = document.querySelector("input[name='lname']"); 
+        alert(a.value + " " + b.value);
+    }
 }
